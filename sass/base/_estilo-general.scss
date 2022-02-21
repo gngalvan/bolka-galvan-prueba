@@ -1,0 +1,21 @@
+@import "../components/mixins";
+
+/* estilos generales */
+body{
+    font-family: 'Poppins', sans-serif;
+}
+main{
+    img{
+        width: 100%;
+    }
+    h1{
+        @include flexCenter;
+        font-weight: bold;
+    }
+    h2{
+        @include flexCenter;
+    }
+    .subtitulo{
+        @include flexCenter;
+    }
+}

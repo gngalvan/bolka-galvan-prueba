@@ -1,0 +1,320 @@
+/* estilos generales */
+body {
+  font-family: 'Poppins', sans-serif; }
+
+main img {
+  width: 100%; }
+
+main h1 {
+  display: flex;
+  justify-content: center;
+  font-weight: bold; }
+
+main h2 {
+  display: flex;
+  justify-content: center; }
+
+main .subtitulo {
+  display: flex;
+  justify-content: center; }
+
+/* header/nav */
+.navbar {
+  position: fixed;
+  z-index: 3;
+  font-size: 14px;
+  width: 100%; }
+  .navbar .container .container-fluid {
+    display: flex;
+    justify-content: end; }
+
+.sub {
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+  text-decoration: none;
+  color: whitesmoke; }
+  .sub:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: -100%;
+    width: 80%;
+    height: 1.5px;
+    background: whitesmoke;
+    transition: left .1s; }
+  .sub:hover:after {
+    left: 9%;
+    grid-template-columns: 1fr; }
+
+.containerBuscador {
+  display: grid;
+  grid-template-columns: 1fr; }
+
+.buscador {
+  width: 10%;
+  background-image: url("../img/searchicon.png");
+  background-repeat: no-repeat;
+  background-position: 1px 2px;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  background-color: white;
+  transition: width 0.4s ease-in-out;
+  transition: width 0.4s ease-in-out;
+  padding: 2px;
+  padding-left: 20px;
+  justify-self: end; }
+  .buscador:focus {
+    width: 100%; }
+
+/* footer */
+#pie {
+  margin-top: 90px;
+  color: whitesmoke;
+  background-color: #212529;
+  font-size: 13px; }
+  #pie h3 {
+    font-size: 13px;
+    font-weight: bold; }
+  #pie .container .contenedorFooter {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-content: center;
+    padding-top: 40px; }
+
+.navegacion {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  width: 80%; }
+  .navegacion a {
+    text-decoration: none;
+    margin: 0;
+    color: whitesmoke;
+    padding-bottom: 5px; }
+
+.seguinos {
+  display: flex;
+  flex-direction: column;
+  align-items: start; }
+
+.redes {
+  display: flex;
+  gap: 5px; }
+  .redes img {
+    width: 70%; }
+
+.contacto {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; }
+
+textarea {
+  height: 40%; }
+
+.legales h5 {
+  font-size: 12px; }
+
+.legales h6 {
+  font-size: 10px; }
+
+/* banner informativo */
+.bannerInformativo {
+  background-color: #212529; }
+  .bannerInformativo .container {
+    display: flex;
+    color: whitesmoke;
+    justify-content: space-around;
+    height: 230px; }
+    .bannerInformativo .container h3 {
+      font-size: 1.2em;
+      font-weight: bold; }
+    .bannerInformativo .container p {
+      font-size: 00.9em; }
+
+.item {
+  display: flex;
+  align-items: center; }
+  .item img {
+    width: 30%; }
+
+.texto {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+  width: 55%; }
+
+/* contenedor cards */
+.container h1 {
+  padding-top: 50px; }
+
+.contenedorCards {
+  display: grid;
+  margin-top: 20px;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  gap: 30px;
+  justify-content: center; }
+
+.cardInicio {
+  display: flex;
+  flex-direction: column;
+  align-items: start; }
+  .cardInicio:hover {
+    box-shadow: 0 0 11px rgba(33, 33, 33, 0.2); }
+  .cardInicio img {
+    border-radius: 5%; }
+
+.categoria {
+  display: flex;
+  flex-direction: row;
+  align-items: end;
+  font-size: 13px;
+  color: #9d9d9c;
+  margin-top: 10px;
+  padding-left: 5px; }
+
+.descripcion {
+  font-size: 14px;
+  margin-top: -10px;
+  padding-left: 5px; }
+
+.precio {
+  font-size: 19px;
+  font-weight: bold;
+  margin-top: -10px;
+  padding-left: 5px; }
+
+.containerVerMas {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 100px;
+  text-decoration: none; }
+
+/* contenedor de otros productos inicio */
+.contenedorCardsOtros {
+  display: grid;
+  margin-top: 50px;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  justify-content: center; }
+
+.otros {
+  transition: transform .2s;
+  margin: 0 auto; }
+  .otros:hover {
+    transform: scale(1.05); }
+
+/* container contacto */
+.containerContactos {
+  padding-top: 90px; }
+
+.col-md-5 h1 {
+  display: flex;
+  justify-content: start;
+  font-size: 22px; }
+
+.col-md-5 h2 {
+  display: flex;
+  justify-content: start;
+  font-size: 22px;
+  font-weight: bold;
+  padding-top: 50px; }
+
+.form-group h4 {
+  font-size: 1em; }
+
+span {
+  font-weight: bold; }
+
+/* container productos */
+.productos h1 {
+  display: flex;
+  justify-content: center;
+  padding-top: 90px;
+  margin-bottom: 10px; }
+
+/* media query */
+@media (max-width: 576px) {
+  .cardInicio {
+    margin-top: 10px;
+    width: 80%; } }
+
+/* mobile */
+@media (max-width: 768px) {
+  main {
+    padding-top: 80px; }
+  /* footer */
+  #pie .container .contenedorFooter {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 40px;
+    align-items: center;
+    padding-bottom: 30px; }
+  .navegacion {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%; }
+  .seguinos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%; }
+  .contacto {
+    display: none; }
+  .contacto h3 {
+    display: flex;
+    align-items: center; }
+  .legales {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%; }
+  /*banner informativo inicio*/
+  .bannerInformativo .container {
+    display: flex;
+    flex-direction: column;
+    color: whitesmoke;
+    justify-content: space-around;
+    height: 650px; }
+  .bannerInformativo .container h3 {
+    font-size: 1.2em;
+    font-weight: bold; }
+  .bannerInformativo .container p {
+    font-size: 0.9em; }
+  .item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px; }
+  .item img {
+    width: 20%; }
+  .texto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 10px;
+    width: 55%; }
+  /* contenedor cards inicio */
+  .contenedorCards {
+    display: grid;
+    margin-top: 20px;
+    grid-template-columns: 1fr;
+    gap: 30px; } }
+
+/* tablet */
+@media (min-width: 767px) and (max-width: 992px) {
+  /* footer */
+  #pie .container .contenedorFooter {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-content: center;
+    gap: 40px; }
+  /* contenedor cards inicio */
+  .contenedorCards {
+    display: grid;
+    margin-top: 20px;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px; } }

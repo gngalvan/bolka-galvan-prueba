@@ -1,0 +1,140 @@
+/* banner informativo */
+.bannerInformativo{
+    background-color: $color-principal;
+    .container{
+        display: flex;
+        color: $color-secundario;
+        justify-content: space-around;
+        height: 230px;
+        h3{
+            font-size: 1.2em;
+            font-weight: bold;
+        }
+        p{
+            font-size: 00.9em;
+        }
+    }
+}
+.item{
+    display: flex;
+    align-items: center;
+    img{
+        width: 30%;
+    }
+}
+.texto{
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+    width: 55%;
+}
+  
+  
+/* contenedor cards */
+.container{
+    h1{
+        padding-top: 50px;
+    }
+}
+.contenedorCards{
+    display: grid;
+    margin-top: 20px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    gap: 30px;
+    justify-content: center;
+}
+.cardInicio {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    &:hover{
+        box-shadow: 0 0 11px rgba(33,33,33,.2); 
+    }
+    img{
+        border-radius: 5%;
+    }
+}
+.categoria{
+    display: flex;
+    flex-direction: row;
+    align-items: end;  
+    font-size: 13px;
+    color: #9d9d9c;
+    margin-top: 10px;
+    padding-left: 5px;
+}
+.descripcion{
+    font-size: 14px;
+    margin-top: -10px;
+    padding-left: 5px;
+}
+.precio{
+    font-size: 19px;
+    font-weight: bold;
+    margin-top: -10px;
+    padding-left: 5px;
+}
+.containerVerMas{
+    @include flexCenter;
+    margin-top: 20px;
+    margin-bottom: 100px;
+    text-decoration: none; 
+}
+  
+/* contenedor de otros productos inicio */
+.contenedorCardsOtros{
+    display: grid;
+    margin-top: 50px;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    justify-content: center;
+}
+.otros{
+    transition: transform .2s;
+    margin: 0 auto;
+    &:hover{
+        transform: scale(1.05);
+    }
+}
+
+  
+  
+/* container contacto */
+.containerContactos{
+    padding-top: 90px;
+}
+.col-md-5{
+    h1{
+        display: flex;
+        justify-content: start;
+        font-size: 22px;
+    }
+} 
+.col-md-5{
+    h2{
+        display: flex;
+        justify-content: start;
+        font-size: 22px;
+        font-weight: bold;
+        padding-top: 50px;
+    }
+}
+.form-group h4{
+    font-size: 1em;
+}
+span{
+    font-weight: bold;
+}
+
+
+/* container productos */
+.productos{
+    h1{
+    @include flexCenter;
+    padding-top: 90px;
+    margin-bottom: 10px;
+    }
+}
+    
+  
+  
