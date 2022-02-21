@@ -264,9 +264,9 @@ span {
     width: 80%; }
   .contacto {
     display: none; }
-  .contacto h3 {
-    display: flex;
-    align-items: center; }
+    .contacto h3 {
+      display: flex;
+      align-items: center; }
   .legales {
     display: flex;
     flex-direction: column;
@@ -279,18 +279,18 @@ span {
     color: whitesmoke;
     justify-content: space-around;
     height: 650px; }
-  .bannerInformativo .container h3 {
-    font-size: 1.2em;
-    font-weight: bold; }
-  .bannerInformativo .container p {
-    font-size: 0.9em; }
+    .bannerInformativo .container h3 {
+      font-size: 1.2em;
+      font-weight: bold; }
+    .bannerInformativo .container p {
+      font-size: 0.9em; }
   .item {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 10px; }
-  .item img {
-    width: 20%; }
+    .item img {
+      width: 20%; }
   .texto {
     display: flex;
     flex-direction: column;
